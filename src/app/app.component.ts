@@ -8,5 +8,16 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-project';
+  
+  data={
+    title : '<h1>Angular Project Course</h1><script>alert("Attack")</alert>'
+  };
+
+  onLogoClicked(){
+    alert('Hello World');
+  }
+
+  onKeyUp(newTitle:string){
+    this.data.title=newTitle;
+  }
 }
